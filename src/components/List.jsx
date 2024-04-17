@@ -1,4 +1,7 @@
+// ./src/components/List.jsx
+
 import React from 'react'
+import Card from './Card';
 
 const List = () => {
     const candidateNames = [
@@ -13,7 +16,9 @@ const List = () => {
     ];
 
   return (
-    <div>List</div>
+    <div>{candidateNames.map((candidate, index) => (
+      <Card key={index} candidate={candidate} />
+    ))}</div>
   )
 }
 
