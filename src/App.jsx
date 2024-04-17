@@ -3,12 +3,14 @@
 import Card from "./components/Card"
 import List from "./components/List"
 import "./app.scss"
+import Navbar from "./components/Navbar"
 
 function App() {
 
   return (
     <>
-      <h2>Election Candidates</h2>
+      <Navbar />
+      <h1>People</h1>
       <List />
     </>
   )
